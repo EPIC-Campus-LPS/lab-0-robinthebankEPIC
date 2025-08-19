@@ -4,20 +4,16 @@ import java.util.Scanner;
 
 public class ScoreTracker {
 	public static void main(String[] args) {
-		Scanner scanner1 = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		int score1;
 		System.out.println("Score 1:");
-		score1 = scanner1.nextInt();
+		score1 = scanner.nextInt();
 		
-		Scanner scanner2 = new Scanner(System.in);
-		int score2;
 		System.out.println("Score 2:");
-		score2 = scanner2.nextInt();
+		int score2 = scanner.nextInt();
 		
-		Scanner scanner3 = new Scanner(System.in);
-		int score3;
 		System.out.println("Score 3:");
-		score3 = scanner3.nextInt();
+		int score3 = scanner.nextInt();
 		
 		int total = score1 + score2 + score3;
 		int avgScore = total / 3;
@@ -27,9 +23,7 @@ public class ScoreTracker {
 		System.out.println("Average Score : " + avgScore);
 		System.out.println("Stars Earned : " + stars);
 		
-		scanner1.close();
-		scanner2.close();
-		scanner3.close();
+		scanner.close();
 		
 	}
 }
