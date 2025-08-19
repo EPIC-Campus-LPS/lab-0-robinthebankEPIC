@@ -3,19 +3,22 @@ import java.util.Scanner;
 
 public class MadLibs {
 	public static void main(String[] args) {
-		Scanner verb = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
         System.out.println("Pick a verb: ");
-        String Verb = verb.nextLine();
+        String Verb = scanner.nextLine();
         
-        Scanner adjective = new Scanner(System.in);
+        Scanner scanner1 = new Scanner(System.in);
         System.out.println("Pick a adjective: ");
-        String Adjective = adjective.nextLine();
+        String Adjective = scanner1.nextLine();
         
-        Scanner noun = new Scanner(System.in);
+        Scanner scanner2 = new Scanner(System.in);
         System.out.println("Pick a noun: ");
-        String Noun = noun.nextLine();
+        String Noun = scanner.nextLine();
         
         
         System.out.println("They wanted to " + Verb + " a " + Adjective + " " + Noun + " for the science fair.");
+	scanner.close();
+	scanner1.close();
+	scanner2.close();
 	}
 }
